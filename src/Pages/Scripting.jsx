@@ -30,52 +30,81 @@ function Scripting() {
     let onSubmit
     let handleDelete
     let handleEdit
+    
 const columns = [
   {
-    accessorKey: "name",
-    header: "Name",
-    cell: ({ row }) => row.getValue("name"),
+    accessorKey: "circle",
+    header: "CIRCLE",
+    cell: ({ row }) => row.getValue("circle"),
   },
   {
-    accessorKey: "email",
-    header: "Email",
-    cell: ({ row }) => row.getValue("email"),
+    accessorKey: "enm",
+    header: "ENM",
+    cell: ({ row }) => row.getValue("enm"),
   },
   {
-    accessorKey: "role",
-    header: "Role",
-    cell: ({ row }) => row.getValue("role"),
+    accessorKey: "username",
+    header: "USERNAME",
+    cell: ({ row }) => row.getValue("username"),
   },
-     {
-            id: "actions",
-            header: "Actions",
-            cell: ({ row }) => {
-                const user = row.original;
+  {
+    accessorKey: "site_count",
+    header: "SITE COUNT",
+    cell: ({ row }) => row.getValue("site_count"),
+  },
+  {
+    accessorKey: "created_time",
+    header: "CREATED TIME",
+    cell: ({ row }) => row.getValue("created_time"),
+  },
+  {
+    id: "download",
+    header: "DOWNLOAD",
+    cell: ({ row }) => {
+      const file = row.original;
+      return (
+        <Button
+          variant="outline"
+          size="sm"
+          onClick={() => handleDownload(file._id)}
+          className="flex items-center gap-2"
+        >
+          <Download className="h-4 w-4" />
+          ZIP
+        </Button>
+      );
+    },
+    enableSorting: false,
+    enableHiding: false,
+  },
+  {
+    id: "actions",
+    header: "Actions",
+    cell: ({ row }) => {
+      const user = row.original;
 
-                return (
-                    <div className="flex gap-2">
-                        <Button
-                            variant="ghost"
-                            size="icon"
-                            onClick={() => handleEdit(user)}
-                        >
-
-                            <Edit className="h-4 w-4" />
-                        </Button>
-                        <Button
-                            variant="ghost"
-                            size="icon"
-                            onClick={() => handleDelete(user._id)}
-                        >
-                            <Trash2 className="h-4 w-4 text-red-600" />
-                        </Button>
-                    </div>
-                );
-            },
-            enableSorting: false,
-            enableHiding: false,
-        }
-
+      return (
+        <div className="flex gap-2">
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => handleEdit(user)}
+          >
+            <Edit className="h-4 w-4" />
+          </Button>
+          <Button
+            variant="ghost"
+            size="icon"
+            onClick={() => handleDelete(user._id)}
+          >
+            <Trash2 className="h-4 w-4 text-red-600" />
+          </Button>
+        </div>
+      );
+    },
+    enableSorting: false,
+    enableHiding: false,
+  },
 ];
 
 
@@ -97,7 +126,7 @@ const columns = [
                                   
                                             className="bg-orange-500 text-white font-bold px-8 py-2.5 rounded-md hover:bg-orange-600 focus:outline-none focus:ring-2 focus:ring-orange-500 focus:ring-opacity-50 w-full"
 
-                                  onClick={()=> setIsModalOpen(true)}>Upload</Button>
+                                  onClick={()=> setIsModalOpen(true)}>Create Script</Button>
                                  
                             </div>
                             <Input
@@ -135,7 +164,7 @@ const columns = [
         {/* Customer Name */}
         <div className="flex flex-col">
           <label htmlFor="customerName" className="mb-2 font-medium text-gray-700 dark:text-gray-300">
-            Customer Name
+            Circle
           </label>
           <select
             id="customerName"
@@ -150,7 +179,7 @@ const columns = [
         {/* Market Name */}
         <div className="flex flex-col">
           <label htmlFor="marketName" className="mb-2 font-medium text-gray-700 dark:text-gray-300">
-            Market Name
+            ENM
           </label>
           <select
             id="marketName"
@@ -178,7 +207,7 @@ const columns = [
         </div>
 
         {/* ENM/OSS */}
-        <div className="flex flex-col">
+        {/* <div className="flex flex-col">
           <label htmlFor="enmOss" className="mb-2 font-medium text-gray-700 dark:text-gray-300">
             ENM/OSS
           </label>
@@ -188,48 +217,38 @@ const columns = [
             className="p-2 border rounded-md bg-white dark:bg-neutral-800 border-gray-300 dark:border-neutral-700"
           >
             <option value="">Select</option>
-            {/* Add other options here */}
           </select>
-        </div>
+        </div> */}
 
-        {/* Site ID */}
+     
+        {/* CIQ File */}
         <div className="flex flex-col">
-          <label htmlFor="siteId" className="mb-2 font-medium text-gray-700 dark:text-gray-300">
-            Site ID
+          <label htmlFor="siteList" className="mb-2 font-medium text-gray-700 dark:text-gray-300">
+            Site List
           </label>
           <input
-            id="siteId"
-            type="text"
-            {...register('siteId')}
-            className="p-2 border rounded-md bg-white dark:bg-neutral-800 border-gray-300 dark:border-neutral-700"
+            id="siteList"
+            type="file"
+            {...register('siteList')}
+            accept=".xlsx,.xls"
+            className="p-1.5 border rounded-md text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-gray-100 dark:file:bg-neutral-700 file:text-gray-700 dark:file:text-gray-300 hover:file:bg-gray-200 dark:hover:file:bg-neutral-600"
           />
         </div>
 
-        {/* CIQ File */}
-        <div className="flex flex-col">
-          <label htmlFor="ciqFile" className="mb-2 font-medium text-gray-700 dark:text-gray-300">
-            CIQ File
+         <div className="flex flex-col">
+          <label htmlFor="Efile" className="mb-2 font-medium text-gray-700 dark:text-gray-300">
+            ENM Logs 
           </label>
           <input
-            id="ciqFile"
+            id="Efile"
             type="file"
-            {...register('ciqFile')}
+                accept=".txt"
+            {...register('Efile')}
             className="p-1.5 border rounded-md text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-gray-100 dark:file:bg-neutral-700 file:text-gray-700 dark:file:text-gray-300 hover:file:bg-gray-200 dark:hover:file:bg-neutral-600"
           />
         </div>
         
-        {/* DCGK Files */}
-        <div className="flex flex-col">
-          <label htmlFor="dcgkFiles" className="mb-2 font-medium text-gray-700 dark:text-gray-300">
-            DCGK Files
-          </label>
-          <input
-            id="dcgkFiles"
-            type="file"
-            {...register('dcgkFiles')}
-            className="p-1.5 border rounded-md text-sm text-gray-500 file:mr-4 file:py-2 file:px-4 file:rounded-md file:border-0 file:text-sm file:font-semibold file:bg-gray-100 dark:file:bg-neutral-700 file:text-gray-700 dark:file:text-gray-300 hover:file:bg-gray-200 dark:hover:file:bg-neutral-600"
-          />
-        </div>
+        
       </div>
 
       {/* Submit Button */}

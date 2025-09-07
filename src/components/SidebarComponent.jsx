@@ -74,6 +74,8 @@ export function SidebarDemo({ outlet }) {
         return "Migration List";
       case "/app/admin":
         return "Admin";
+             case "/app/enm-command":
+        return "ENM Command";
       default:
         return "DataYog";
     }
@@ -101,6 +103,14 @@ export function SidebarDemo({ outlet }) {
 
     ...(role === "admin"
       ? [
+            {
+          label: "ENM Command",
+          href: "enm-command",
+          icon: (
+            <IconUsers className="h-5 w-5 flex-shrink-0" />
+          ),
+        },
+        
         {
           label: "Check IN/OUT",
           href: "check-in-out",

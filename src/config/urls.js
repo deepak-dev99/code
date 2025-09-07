@@ -24,7 +24,9 @@ const Urls = {
     dashboard:"/dashboard",
     analyze:"/analyze",
     upload:"/upload",
-    urlfiles:"/user-files"
+    urlfiles:"/user-files",
+    emns:"/enms",
+    circles:"/circles"
     
 
 

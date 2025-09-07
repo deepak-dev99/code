@@ -14,6 +14,7 @@ import CheckIn from './Pages/CheckIn';
 import Scripting from './Pages/Scripting';
 import MigrationList from './MigrationList';
 import Admin from './components/Admin';
+import Enm from './Pages/Enm';
 
 
 function GuestOnly({ children }) {
@@ -125,7 +126,11 @@ const router = createBrowserRouter([
 {
   path:"admin",
   element:<Admin/>
-}
+},
+{
+  path:"enm-command",
+  element:<Enm/>
+},
 
     ],
   },

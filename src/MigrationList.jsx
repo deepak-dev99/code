@@ -18,8 +18,11 @@ function MigrationList() {
     })
 
     let handleDelete
-    let handleEdit
-const columns = [
+ const handleEdit = (user) => {
+        reset(userData);
+        setEditingUserId(user?._id);
+        setIsModalOpen(true);
+    };const columns = [
   {
     accessorKey: "name",
     header: "Name",

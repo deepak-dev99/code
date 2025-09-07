@@ -7,7 +7,7 @@ import React, { useState, useRef, useMemo } from 'react';
 import { useSelector } from 'react-redux';
 import { Outlet } from 'react-router-dom';
 
-function CheckIn() {
+function Enm() {
     const queryClient = useQueryClient();
     const [globalFilter, setGlobalFilter] = useState("");
     const [selectedFilter, setSelectedFilter] = useState("precheck");
@@ -182,7 +182,7 @@ function CheckIn() {
                             <FolderSearch className="h-8 w-8 text-blue-600 dark:text-blue-400" />
                         </div>
                         <h3 className="text-lg font-semibold text-gray-900 dark:text-white mb-2">{title}</h3>
-                      
+                     
                     </div>
 
                     <Button
@@ -264,10 +264,10 @@ function CheckIn() {
                                         ? 'bg-white dark:bg-neutral-600 shadow-sm text-blue-600 dark:text-blue-400 font-medium'
                                         : 'text-gray-600 dark:text-gray-400 hover:text-gray-900 dark:hover:text-gray-200'
                                     }`}>
-                                    Pre Check
+                                    ENM Command
                                 </div>
                             </label>
-                            <label className="flex items-center">
+                            {/* <label className="flex items-center">
                                 <input
                                     type="radio"
                                     name="userFilter"
@@ -282,7 +282,7 @@ function CheckIn() {
                                     }`}>
                                     Post Check
                                 </div>
-                            </label>
+                            </label> */}
                         </div>
                     </div>
 
@@ -292,7 +292,7 @@ function CheckIn() {
                     <div className="grid gap-6 mb-8">
                         {selectedFilter === "precheck" && (
                             <FileUploadCard
-                                title="PreCheck Log Files"
+                                title="Import Site List"
                                 files={uploadedFiles1}
                                 fileNumber={1}
                                 onBrowse={() => handleBrowseClick(fileInputRef1)}
@@ -346,7 +346,7 @@ function CheckIn() {
                                 className="bg-gradient-to-r from-orange-500 to-orange-600 hover:from-orange-600 hover:to-orange-700 text-white px-8 py-3 rounded-lg shadow-sm transition-all duration-200"
                             >
                                 <FileText className="h-4 w-4 mr-2" />
-                                Generate Report
+                                Generate Command
                             </Button>
                         </div>
 
@@ -403,4 +403,4 @@ function CheckIn() {
     );
 }
 
-export default CheckIn;
+export default Enm;

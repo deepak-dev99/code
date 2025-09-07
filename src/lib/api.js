@@ -20,8 +20,24 @@ const query = roles.map(r => `role=${encodeURIComponent(r)}`).join("&");
   }
 };
 
-export const createUsers = async () => {
-  const response = await http.post(`${Urls.users}`);
+export const createUsers = async (data) => {
+  const response = await http.post(`${Urls.users}`,data);
+  return response.data;
+};
+
+export const createEnms = async (data) => {
+  const response = await http.post(`${Urls.emns}`,data);
+  return response.data;
+};
+
+export const deleteEnm = async (id) => {
+  const response = await http.delete(`${Urls.emns}/${id}`);
+  return response.data;
+};
+
+
+export const createCircle = async (data) => {
+  const response = await http.post(`${Urls.circles}`,data);
   return response.data;
 };
 
@@ -48,6 +64,16 @@ export const uploadPdf = async (data) => {
 };
 export const Urlfiles = async (data) => {
   const response = await http.get(`${Urls.urlfiles}`, data);
+  return response.data;
+};
+
+export const enms = async (data) => {
+  const response = await http.get(`${Urls.emns}`, data);
+  return response.data;
+};
+
+export const circleData = async (data) => {
+  const response = await http.get(`${Urls.circles}`, data);
   return response.data;
 };
 
