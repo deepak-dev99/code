@@ -1,0 +1,568 @@
+
+presentSeverity : CRITICAL
+NodeName : CSD02436A
+specificProblem : Rectifier Lost
+eventTime : 2025-08-19T13:51:04
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=CSD02436A,SDN=0,PowerManager=ERS,PowerSystem=M830B,Rectifiers=0200
+problemText : All Rectifier Lost
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 54502
+probableCause : x733EquipmentMalfunction
+eventType : equipmentAlarm
+recordType : ALARM
+
+presentSeverity : CRITICAL
+NodeName : MORTEST1A2
+specificProblem : Heartbeat Failure
+eventTime : 2025-07-23T10:37:12
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Orlando,MeContext=MORTEST1A2
+problemText : 
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : -2
+probableCause : LAN Error/Communication Error
+eventType : Communications alarm
+recordType : HEARTBEAT_ALARM
+
+presentSeverity : MAJOR
+NodeName : CSD02436A
+specificProblem : Battery Temperature Sensor Fault
+eventTime : 2025-06-24T15:48:50
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=CSD02436A,SDN=0,PowerManager=ERS,PowerSystem=M830B
+problemText : 
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 46302
+probableCause : x733EquipmentMalfunction
+eventType : equipmentAlarm
+recordType : ALARM
+
+presentSeverity : MINOR
+NodeName : MSD08146A
+specificProblem : External Link Failure
+eventTime : 2025-09-06T06:58:01
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD08146A,ManagedElement=MSD08146A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring eNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175110
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD08146A
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-05T18:05:00
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD08146A,ManagedElement=MSD08146A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06202A
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-06T10:31:59
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06202A,ManagedElement=MSD06202A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06052A
+specificProblem : XnC Link to GNodeB Failure
+eventTime : 2025-09-06T16:17:14
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06052A,ManagedElement=MSD06052A,GNBCUCPFunction=1
+problemText : XnC link problem to gNodeBs listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175269
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06052A
+specificProblem : External Link Failure
+eventTime : 2025-09-02T12:47:43
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06052A,ManagedElement=MSD06052A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring eNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175110
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06052A
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-06T00:48:01
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06052A,ManagedElement=MSD06052A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06052A2
+specificProblem : XnC Link to GNodeB Failure
+eventTime : 2025-09-06T16:17:14
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06052A2,ManagedElement=MSD06052A2,GNBCUCPFunction=1
+problemText : XnC link problem to gNodeBs listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175269
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06730A
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-06T12:27:49
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06730A,ManagedElement=MSD06730A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06730A
+specificProblem : Critical Temperature Performance Degraded
+eventTime : 2025-09-06T15:45:23
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06730A,ManagedElement=MSD06730A,Equipment=1,FieldReplaceableUnit=RRU-2
+problemText : Temperature is too high. [ DL/A DL/B DL/C ]
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175078
+probableCause : x733TemperatureUnacceptable
+eventType : environmentalAlarm
+recordType : ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06730A
+specificProblem : Service Degraded
+eventTime : 2025-09-06T15:45:24
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06730A,ManagedElement=MSD06730A,ENodeBFunction=1,EUtranCellFDD=LSD06730A21
+problemText : This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175114
+probableCause : x733PerformanceDegraded
+eventType : qualityOfServiceAlarm
+recordType : ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06730A
+specificProblem : Service Degraded
+eventTime : 2025-09-06T15:45:26
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06730A,ManagedElement=MSD06730A,ENodeBFunction=1,NbIotCell=ZSD06730A21
+problemText : This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175114
+probableCause : x733PerformanceDegraded
+eventType : qualityOfServiceAlarm
+recordType : ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06956A
+specificProblem : External Link Failure
+eventTime : 2025-09-05T02:57:15
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06956A,ManagedElement=MSD06956A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring eNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175110
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06956A
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-05T02:23:13
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06956A,ManagedElement=MSD06956A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06200A
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-06T15:57:54
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06200A,ManagedElement=MSD06200A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : NSD06392A2
+specificProblem : XnC Link to GNodeB Failure
+eventTime : 2025-09-05T06:55:15
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=NSD06392A2,ManagedElement=NSD06392A2,GNBCUCPFunction=1
+problemText : XnC link problem to gNodeBs listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175269
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06590A
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-06T11:40:40
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06590A,ManagedElement=MSD06590A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06949A
+specificProblem : External Link Failure
+eventTime : 2025-09-05T10:46:51
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06949A,ManagedElement=MSD06949A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring eNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175110
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06949A
+specificProblem : Service Degraded
+eventTime : 2025-09-06T14:23:55
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06949A,ManagedElement=MSD06949A,GNBDUFunction=1,NRCellDU=ISD06949A21
+problemText : This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175114
+probableCause : x733PerformanceDegraded
+eventType : qualityOfServiceAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06949A
+specificProblem : Critical Temperature Performance Degraded
+eventTime : 2025-09-06T14:23:54
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06949A,ManagedElement=MSD06949A,Equipment=1,FieldReplaceableUnit=21-02-01
+problemText : Temperature is too high. [ DL/B DL/C ]
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175078
+probableCause : x733TemperatureUnacceptable
+eventType : environmentalAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06949A
+specificProblem : Service Degraded
+eventTime : 2025-09-06T14:23:56
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06949A,ManagedElement=MSD06949A,ENodeBFunction=1,EUtranCellFDD=LSD06949A21
+problemText : This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175114
+probableCause : x733PerformanceDegraded
+eventType : qualityOfServiceAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06949A
+specificProblem : Service Degraded
+eventTime : 2025-09-06T14:23:58
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06949A,ManagedElement=MSD06949A,ENodeBFunction=1,NbIotCell=ZSD06949A21
+problemText : This is a secondary alarm, use alarm correlation information in Additional Information to find primary alarm.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175114
+probableCause : x733PerformanceDegraded
+eventType : qualityOfServiceAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06949A
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-06T08:42:14
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06949A,ManagedElement=MSD06949A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : NSD06321A2
+specificProblem : XnC Link to GNodeB Failure
+eventTime : 2025-09-03T04:30:55
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=NSD06321A2,ManagedElement=NSD06321A2,GNBCUCPFunction=1
+problemText : XnC link problem to gNodeBs listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175269
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : ALARM
+
+presentSeverity : MINOR
+NodeName : MORTEST1A2
+specificProblem : SFP Not Present
+eventTime : 2025-05-14T15:59:00
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Orlando,MeContext=MORTEST1A2,ManagedElement=MORTEST1A2,Equipment=1,FieldReplaceableUnit=BB-01,SfpModule=TN_IDL_C
+problemText : 
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175156
+probableCause : m3100ReplaceableUnitMissing
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MORTEST1A2
+specificProblem : Link Failure
+eventTime : 2025-05-14T16:03:59
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Orlando,MeContext=MORTEST1A2,ManagedElement=MORTEST1A2,Equipment=1,RiLink=BB-01-D-7-1-Data2
+problemText : No signal detected (link start time-out). Near end port:FieldReplaceableUnit=BB-01,RiPort=D (transportType=NOT_SET) (Mixed Mode with other ME).
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175144
+probableCause : x733EquipmentMalfunction
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MORTEST1A2
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-07-21T01:37:25
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Orlando,MeContext=MORTEST1A2,ManagedElement=MORTEST1A2,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : NSD06052A
+specificProblem : XnC Link to GNodeB Failure
+eventTime : 2025-09-06T16:17:08
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=NSD06052A,ManagedElement=NSD06052A,GNBCUCPFunction=1
+problemText : XnC link problem to gNodeBs listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175269
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : NSD06008A
+specificProblem : XnC Link to GNodeB Failure
+eventTime : 2025-09-04T03:58:11
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=NSD06008A,ManagedElement=NSD06008A,GNBCUCPFunction=1
+problemText : XnC link problem to gNodeBs listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175269
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06800A2
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-06T14:28:33
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06800A2,ManagedElement=MSD06800A2,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06392A
+specificProblem : XnC Link to GNodeB Failure
+eventTime : 2025-09-06T07:52:48
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06392A,ManagedElement=MSD06392A,GNBCUCPFunction=1
+problemText : XnC link problem to gNodeBs listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175269
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06392A
+specificProblem : External Link to GNodeB Failure
+eventTime : 2025-09-06T03:43:53
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06392A,ManagedElement=MSD06392A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring gNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175203
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : MINOR
+NodeName : MSD06392A
+specificProblem : External Link Failure
+eventTime : 2025-09-05T22:39:37
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06392A,ManagedElement=MSD06392A,ENodeBFunction=1
+problemText : X2 link problem to one or several neighbouring eNodeBs.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175110
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : WARNING
+NodeName : MSD08146A
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-09-01T15:38:20
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD08146A,ManagedElement=MSD08146A,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : WARNING
+NodeName : MSD06202A
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-08-29T03:16:11
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06202A,ManagedElement=MSD06202A,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : WARNING
+NodeName : MSD06052A
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-08-29T03:16:14
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06052A,ManagedElement=MSD06052A,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : ALARM
+
+presentSeverity : WARNING
+NodeName : MSD06730A
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-08-29T03:16:11
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06730A,ManagedElement=MSD06730A,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : WARNING
+NodeName : CSD02436A
+specificProblem : Signed Software Problem
+eventTime : 2025-04-07T10:07:59
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=CSD02436A,SDN=0
+problemText : Root Certificate not in Trusted Anchors
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 26639
+probableCause : x733SoftwareError
+eventType : equipmentAlarm
+recordType : ALARM
+
+presentSeverity : WARNING
+NodeName : MSD06956A
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-08-29T03:16:14
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06956A,ManagedElement=MSD06956A,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : WARNING
+NodeName : MSD06200A
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-08-29T03:16:15
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06200A,ManagedElement=MSD06200A,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : WARNING
+NodeName : NSD06392A2
+specificProblem : Emergency Unlock Reset Key Required
+eventTime : 2025-09-05T06:51:46
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=NSD06392A2,ManagedElement=NSD06392A2,SystemFunctions=1,Lm=1,EmergencyUnlock=1
+problemText : Emergency Unlock Reset Key required
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175048
+probableCause : x733ResourceAtOrNearingCapacity
+eventType : qualityOfServiceAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : WARNING
+NodeName : MSD06590A
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-08-29T03:16:11
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06590A,ManagedElement=MSD06590A,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : WARNING
+NodeName : MSD06949A
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-08-29T03:16:15
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06949A,ManagedElement=MSD06949A,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : WARNING
+NodeName : MSD06800A2
+specificProblem : PLMN Service Redundancy Lost
+eventTime : 2025-08-29T03:16:14
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=MSD06800A2,ManagedElement=MSD06800A2,ENodeBFunction=1
+problemText : S1 connection failure for PLMN connected with link represented by MO listed in Additional Information.
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 9175331
+probableCause : gsm1211LinkFailure
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+presentSeverity : CLEARED
+NodeName : CSD02436A
+specificProblem : Link down
+eventTime : 2025-04-30T00:45:15
+objectOfReference : SubNetwork=ONRM_ROOT_MO,SubNetwork=Escondido,MeContext=CSD02436A,SDN=0,EthernetInterface=SOUTHBOUND-ETH
+problemText : 
+alarmState : ACTIVE_ACKNOWLEDGED
+alarmId : 26519
+probableCause : x733EquipmentMalfunction
+eventType : equipmentAlarm
+recordType : REPEATED_ALARM
+
+
+Total number of alarms fetched for the given query is :47
+
