@@ -176,3 +176,91 @@ def download_file(file_id):
             "Content-Disposition": f'attachment; filename="{download_name}"'
         }
     )
+
+@api.route("/circles", methods=["POST"])
+@token_required
+def create_circle():
+    data = request.get_json()
+
+    if not data or "name" not in data:
+        return jsonify({"message": "Invalid input, 'name' is required"}), 400
+
+    circle = {
+        "user_id": request.user.get("sub"),
+        "name": data["name"]
+    }
+
+    result = mongo.db.circles.insert_one(circle)
+
+    return jsonify({
+        "message": "Circle created successfully",
+        "id": str(result.inserted_id),
+        "circle": circle
+    }), 201
+
+
+
+
+@api.route("/enms", methods=["POST"])
+@token_required
+def create_enm():
+    data = request.get_json()
+
+    # Validate required fields
+    if not data or "enm" not in data or "circle" not in data:
+        return jsonify({"message": "Invalid input, 'enm' and 'circle' are required"}), 400
+
+    # Check if the combination already exists
+    existing = mongo.db.enms.find_one({"enm": data["enm"], "circle": data["circle"]})
+    if existing:
+        return jsonify({"message": "ENM with this 'enm' and 'circle' already exists"}), 400
+
+    enm = {
+        "user_id": request.user.get("sub"),
+        "enm": data["enm"],
+        "circle": data["circle"]
+    }
+
+    result = mongo.db.enms.insert_one(enm)
+
+    return jsonify({
+        "message": "ENM created successfully",
+        "id": str(result.inserted_id),
+        "enm": enm
+    }), 201
+    
+@api.route("/enms/<enm_id>", methods=["DELETE"])
+@token_required
+def delete_enm(enm_id):
+    try:
+        enm = mongo.db.enms.find_one({
+            "_id": ObjectId(enm_id),
+            "user_id": request.user.get("sub")
+        })
+
+        if not enm:
+            return jsonify({"message": "ENM not found"}), 404
+
+        mongo.db.enms.delete_one({"_id": ObjectId(enm_id)})
+
+        return jsonify({"message": "ENM deleted successfully"}), 200
+
+    except Exception as e:
+        return jsonify({"message": "Error deleting ENM", "error": str(e)}), 500
+
+
+@api.route("/enms", methods=["GET"])
+@token_required
+def get_enms():
+    user_id = request.user.get("sub")
+
+    enms_cursor = mongo.db.enms.find({"user_id": user_id})
+    enms = []
+    for e in enms_cursor:
+        enms.append({
+            "id": str(e["_id"]),
+            "enm": e.get("enm"),
+            "circle": e.get("circle")
+        })
+
+    return jsonify(enms), 200
